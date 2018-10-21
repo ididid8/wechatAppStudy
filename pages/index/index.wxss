@@ -1,29 +1,6 @@
-.page {
-  flex: 1;
-  background-color: #ffff00;
-  font-size: 30px;
-}
-
-.page-section {
+.view-item {
   padding: 10px;
-  background-color: #fffff0;
-  margin: 10px;
-  font-size: 10px;
-}
-
-.flex-item {
-  width: 100px;
-  height: 100px;
-}
-
-.bc_green {
-  background-color: green;
-}
-
-.bc_red {
-  background-color: red;
-}
-
-.bc_blue {
-  background-color: blue;
+  background-color: limegreen;
+  border-radius: 5px;
+  margin: 5px;
 }
