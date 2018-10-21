@@ -1,7 +1,8 @@
 <view class="container">
-  <view>{{ clickMsg }}</view>
-
-  <view id="view0" data-hi="data-view0" data-qf="data-qf0" class="view-item" bindtap='clickMe'>点击view0</view>
-  <view id="view1" data-hi="data-view1" data-qf="data-qf1" class="view-item" bindtap='clickMe'>点击view1</view>
-
+  <button size="mini">按钮</button>
+  <button size="default" type="primary">按钮</button>
+  <button size="default" type="warn">按钮</button>
+  <button size="default" type="warn" plain='true'>按钮</button>
+  <button size="default" type="primary" disabled='true'>按钮</button>
+  <button size="default" type="primary" loading='true' bindtap='doLoading'>加载中</button>
 </view>
