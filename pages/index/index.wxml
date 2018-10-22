@@ -1,8 +1,12 @@
 <view class="container">
-  <button size="mini">按钮</button>
-  <button size="default" type="primary">按钮</button>
-  <button size="default" type="warn">按钮</button>
-  <button size="default" type="warn" plain='true'>按钮</button>
-  <button size="default" type="primary" disabled='true'>按钮</button>
-  <button size="default" type="primary" loading='true' bindtap='doLoading'>加载中</button>
+  <view class='view-section'>
+    <icon type="success"></icon>
+    <icon type="success" size="50"></icon>
+    <icon type="success" size="50" color='red'></icon>
+  </view>
+  <view class='view-section'>
+    <block wx:for="{{[10, 20, 30, 40, 50]}}">
+      <icon type="info" size="{{item}}"></icon>
+    </block>
+  </view>
 </view>
