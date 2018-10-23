@@ -1,8 +1,10 @@
 var param = {
   data: {
-    length : 2,
-    name: 'lihui',
-    isShow: false,
+    items: [
+      {message: 'view0'},
+      { message: 'view1' },
+      { message: 'view2' },
+    ]
   }
 };
 

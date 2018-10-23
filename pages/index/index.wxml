@@ -1,10 +1,20 @@
 <view class='container'>
-  <view wx:if="{{length > 5}}">大于5</view>
-  <view wx:else>小于等于5</view>
-  <view>{{"hello " + name}}</view>
-  <block wx:if="{{isShow? true: false}}">
-    <view>view0</view>
-    <view>view1</view>
+  <!-- items是数组 index是下标 item是每一项 -->
+  <view wx:for="{{items}}">
+    {{index}}: {{item.message}}
+  </view>
+  <!-- 用idx替换了缺省的index，用myItem替换了缺省的item -->
+  <view wx:for="{{items}}" wx:for-index="idx" wx:for-item="myItem">
+    {{idx}}: {{myItem.message}}
+  </view>
+
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+  <block wx:for="{{[1, 2, 3]}}">
+    <view>wiew10</view>
+    <view>wiew11</view>
   </block>
-  <view id="abc" style='display: none'>view2</view>
 </view>
